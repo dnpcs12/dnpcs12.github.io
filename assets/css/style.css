@@ -61,8 +61,8 @@ a:hover {
 img {
     max-width: 100%;
     height: auto;
+    image-rendering: auto;
     image-rendering: -webkit-optimize-contrast;
-    image-rendering: crisp-edges;
 }
 
 /* ===== Theme Toggle ===== */
@@ -109,7 +109,7 @@ img {
 
 /* ===== Layout ===== */
 .container {
-    max-width: 1100px;
+    max-width: 1200px;
     margin: 0 auto;
     padding: 0 24px;
 }
@@ -312,8 +312,8 @@ img {
 }
 
 .pub-image img {
-    width: 320px;
-    height: 200px;
+    width: 400px;
+    height: 250px;
     object-fit: contain;
     background: var(--bg-secondary);
     border-radius: 8px;
@@ -321,8 +321,8 @@ img {
 }
 
 .placeholder-image {
-    width: 320px;
-    height: 200px;
+    width: 400px;
+    height: 250px;
     background: var(--accent-gradient);
     border-radius: 8px;
     display: flex;
@@ -500,9 +500,35 @@ img {
     font-weight: 500;
 }
 
-.award-card .award-org {
+.award-card a.award-title {
+    color: var(--accent-primary);
+    transition: color var(--transition);
+}
+
+.award-card a.award-title:hover {
+    color: var(--accent-secondary);
+}
+
+.award-card .award-desc {
     color: var(--text-secondary);
     font-size: 0.85rem;
+    line-height: 1.5;
+}
+
+.award-card .award-link {
+    color: var(--accent-primary);
+    font-weight: 500;
+    transition: color var(--transition);
+}
+
+.award-card .award-link:hover {
+    color: var(--accent-secondary);
+}
+
+.award-card .award-org {
+    color: var(--text-secondary);
+    font-size: 0.8rem;
+    opacity: 0.7;
 }
 
 /* ===== Footer ===== */
